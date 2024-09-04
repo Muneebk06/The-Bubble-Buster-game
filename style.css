@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+}
+header h2 ,footer h2 {
+    color: #ecf6c1;
+}
+header, footer {
+    text-align: center;
+    background: linear-gradient(135deg, #81ecec, #6c5ce7); /* Gradient background for a modern look */
+    padding: 15px 0;
+    color: #fff; /* White text color for contrast */
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #74ebd5, #acb6e5); /* Subtle background gradient */
+    flex-shrink: inherit;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.panel {
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for more depth */
+    border-radius: 15px; /* Softer rounded corners */
+    border: 1px solid #dfe6e9; /* Subtle border */
+}
+
+.paneltop {
+    padding: 0px 10%;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(135deg, #6a89cc, #4a69bd); /* Vibrant gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.box {
+    font-size: 25px;
+    font-weight: 700; /* Bolder for emphasis */
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #dfe6e9; /* Light background */
+    color: #0984e3; /* Vibrant text color */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition effect */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.pbtm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    width: 100%;
+    height: calc(100% - 100px);
+    flex-wrap: wrap;
+    gap: 15px; /* Increased gap for better spacing */
+}
+
+.elem h2 {
+    font-weight: 600; /* Slightly bolder for headings */
+    font-size: 22px;
+    color: #fff; /* White for contrast */
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #fd79a8; /* Bright and vibrant bubble color */
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 20px; /* Slightly larger font for better visibility */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow for bubbles */
+    transition: all 0.3s ease; /* Smooth transition for hover */
+    cursor: pointer;
+}
+
+.bubble:hover {
+    background-color: #e84393; /* Darker pink on hover */
+    transform: scale(1.2); /* Grow effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* More shadow on hover */
+}
+
+a {
+    text-decoration: none;
+    color: #81ecec; /* Bright link color */
+    font-weight: 600; /* Bold for emphasis */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #00cec9; /* Change color on hover */
+}
+@media (max-width: 768px) {
+    .paneltop {
+        padding: 10px;
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust height */
+    }
+
+    .elem {
+        margin-bottom: 10px; /* Adds spacing between stacked elements */
+        flex: none; /* Resets flex basis */
+    }
+
+    .pbtm {
+        height: auto; /* Adjust height */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        font-size: 18px; /* Smaller font size for small screens */
+        padding: 8px 15px; /* Adjusted padding */
+    }
+
+    .bubble {
+        width: 45px; /* Smaller bubbles */
+        height: 45px;
+        font-size: 16px; /* Smaller font size */
+    }
+}
