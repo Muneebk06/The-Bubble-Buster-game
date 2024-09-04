@@ -7,7 +7,7 @@ function makebubble() {
     }
     document.querySelector(".pbtm").innerHTML = clutter;
 }
-var timer = 60;
+var timer = 30;
 var increseScore = 0;
 var hitval;
 function runtimer() {
